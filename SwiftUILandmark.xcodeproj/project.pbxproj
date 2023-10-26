@@ -11,6 +11,8 @@
 		FC319E792AEAAC4B00621AC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC319E782AEAAC4B00621AC7 /* ContentView.swift */; };
 		FC319E7B2AEAAC4C00621AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC319E7A2AEAAC4C00621AC7 /* Assets.xcassets */; };
 		FC319E7E2AEAAC4C00621AC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC319E7D2AEAAC4C00621AC7 /* Preview Assets.xcassets */; };
+		FC319E852AEAACDE00621AC7 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC319E842AEAACDE00621AC7 /* Landmark.swift */; };
+		FC319E872AEAAE4D00621AC7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC319E862AEAAE4D00621AC7 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		FC319E782AEAAC4B00621AC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC319E7A2AEAAC4C00621AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC319E7D2AEAAC4C00621AC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC319E842AEAACDE00621AC7 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		FC319E862AEAAE4D00621AC7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				FC319E762AEAAC4B00621AC7 /* SwiftUILandmarkApp.swift */,
 				FC319E782AEAAC4B00621AC7 /* ContentView.swift */,
+				FC319E862AEAAE4D00621AC7 /* DetailView.swift */,
+				FC319E842AEAACDE00621AC7 /* Landmark.swift */,
 				FC319E7A2AEAAC4C00621AC7 /* Assets.xcassets */,
 				FC319E7C2AEAAC4C00621AC7 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC319E792AEAAC4B00621AC7 /* ContentView.swift in Sources */,
+				FC319E872AEAAE4D00621AC7 /* DetailView.swift in Sources */,
 				FC319E772AEAAC4B00621AC7 /* SwiftUILandmarkApp.swift in Sources */,
+				FC319E852AEAACDE00621AC7 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
