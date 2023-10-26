@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Landmark : Identifiable {
+struct Landmark : Identifiable, Hashable {
     var id = UUID()
     let name : String
     let country : String

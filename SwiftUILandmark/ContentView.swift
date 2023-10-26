@@ -10,35 +10,45 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        
+        
         /*
-         struct conforms to hashable
-         List(landmarkArray, id: \.self) { landmark in
+         //struct conforms to hashable
+        List(landmarkArray, id: \.self) { landmark in
             Text(landmark.name)
+        }
+         
+        //struct conforms to identifiable
+        List(landmarkArray) { landmark in
+            Text(landmark.name)
+        }
+         */
+      
+         
+         NavigationStack {
+         List {
+         //struct conforms to identifiable
+         ForEach(landmarkArray) { landmark in
+         NavigationLink {
+         DetailView(selectedLandmark: landmark)
+         } label: {
+         HStack{
+         Image(landmark.image)
+         .resizable()
+         .aspectRatio(contentMode: .fit)
+         .frame(width: 50, height: 30)
+         Text(landmark.name)
+         }
          }
          
-         */
-        NavigationStack {
-            List {
-                //struct conforms to identifiable
-                ForEach(landmarkArray) { landmark in
-                    NavigationLink {
-                        DetailView(selectedLandmark: landmark)
-                    } label: {
-                        HStack{
-                            Image(landmark.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 30)
-                            Text(landmark.name)
-                        }
-                    }
-
-                    
-                }
-            }
-                .navigationTitle("Landmark Book")
-        }
-    }
+         
+         }
+         }
+         .navigationTitle("Landmark Book")
+         }
+         }
+        
+    
 }
 
 #Preview {
